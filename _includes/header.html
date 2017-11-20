@@ -2,8 +2,8 @@
     <header id="header" class="header">
         <div class="container">
             <h1 class="logo pull-left">
-                <a href="{{site.baseurl}}/">
-					<img src="{{ site.baseurl }}assets/images/img_logo.png" alt="{{ site.title }}"/>
+                <a href="{{site.url}}/">
+					<img src="{{ site.url }}/raws/images/img_logo.png" alt="{{ site.title }}"/>
                 </a>
             </h1><!--//logo-->
             <nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -23,7 +23,7 @@
                             {% if navigator.archor %} <a class="scrollto" href="#{{ navigator.url }}"> {% else %}<a href="{{ navigator.url }}">{% endif %} {{ navigator.title }}</a></li>
                         {% endfor %}
                         <li>
-                            <a class="btn btn-primary btn-sm" style="text-align: left; color: #0a7396; background-color: transparent; margin-top: 5px; margin-right: 25px; padding: 5px 15px!important;" href=""><i class="fa fa-sign-in" aria-hidden="true"></i> kintone</a>
+                            <a href="login.html" class="btn btn-primary btn-sm" style="text-align: left; color: #0a7396; background-color: transparent; margin-top: 5px; margin-right: 25px; padding: 5px 15px!important;" href=""><i class="fa fa-sign-in" aria-hidden="true"></i> kintone</a>
                         </li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->

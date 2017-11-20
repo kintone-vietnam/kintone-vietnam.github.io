@@ -1,15 +1,15 @@
 - title: Giải Pháp
-  url: solution
+  url: solution.html
   archor: false
 
 - title: Dịch Vụ
-  url: service
+  url: service.html
   archor: false
 
 - title: Khách Hàng
-  url: customer
+  url: customer.html
   archor: false
 
 - title: Hỗ Trợ
-  url: help
+  url: help.html
   archor: false

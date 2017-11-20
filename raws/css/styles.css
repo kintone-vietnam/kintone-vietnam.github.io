@@ -8,7 +8,7 @@
 /* Default */
 /* ======= Base ======= */
 body {
-  font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+  font-family:'Lato', tahoma, verdana, arial, sans-serif;
   color: #444444;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -472,7 +472,7 @@ pre code {
 
 .footer ul.bottom-list > li {
   list-style: none;
-  padding: 5px 0;
+  padding: 8px 0;
 }
 
 .footer ul.bottom-list > li a,
@@ -482,6 +482,27 @@ pre code {
   color: #f5f5f5;
   font-size: 0.85em;
 }
+
+/* FORM - Contact.html */
+ul.form-contact-input{
+  margin: 0;
+  padding: 0;
+}
+
+ul.form-contact-input li{
+  list-style: none;
+  padding: 5px 0;
+}
+
+/* FORM - help.html */
+
+/* FORM - login.html */
+
+/* FORM - customer.html */
+
+/* FORM - service.html */
+
+/* FORM - solution.html */
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
