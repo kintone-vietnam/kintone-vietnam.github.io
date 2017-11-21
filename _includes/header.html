@@ -18,7 +18,7 @@
                 <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
-                        {% for navigator in site.data.navigators %}
+                        {% for navigator in site.data.system-navigators %}
                         <li class="nav-item"> 
                             {% if navigator.archor %} <a class="scrollto" href="#{{ navigator.url }}"> {% else %}<a href="{{ navigator.url }}">{% endif %} {{ navigator.title }}</a></li>
                         {% endfor %}
