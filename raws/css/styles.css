@@ -473,6 +473,7 @@ pre code {
 .footer ul.bottom-list > li {
   list-style: none;
   padding: 8px 0;
+  font-size: 0.85em;
 }
 
 .footer ul.bottom-list > li a,
@@ -480,7 +481,6 @@ pre code {
 .footer ul.bottom-list > li a:active,
 .footer ul.bottom-list > li a:visited{
   color: #f5f5f5;
-  font-size: 0.85em;
 }
 
 /* FORM - Contact.html */
