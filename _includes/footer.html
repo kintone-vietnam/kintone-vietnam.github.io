@@ -1,6 +1,7 @@
 <!-- ******FOOTER****** -->
 <footer class="footer">
-    <br/><br/>
+    <br/>
+    <br/>
     <div class="container" style="padding: 0;">
         <div class="col-sm-4">
             <span class="bottom-list-title">Tính năng</span>
@@ -8,24 +9,29 @@
             <br/>
             <ul class="bottom-list">
                 <li>
-                    <a href="/feature/fast-app-builder.html">Phát triển nhanh ứng dụng quản lý kinh doanh</a>
+                    <a href="/feature/fast-app-builder.html">
+                        <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Phát triển nhanh ứng dụng quản lý kinh doanh</a>
                 </li>
                 <li>
-                    <a href="/feature/workflow-management.html">Quản lý Quy trình làm việc và phê duyệt</a>
+                    <a href="/feature/workflow-management.html">
+                        <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Quản lý Quy trình làm việc và phê duyệt</a>
                 </li>
                 <li>
-                    <a href="/feature/database-administrator.html">Thu thập, quản lý dữ liệu dễ dàng</a>
+                    <a href="/feature/database-administrator.html">
+                        <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Thu thập, quản lý dữ liệu dễ dàng</a>
                 </li>
                 <li></li>
                 <li>
-                    <a href="/feature/mobile-connecting.html">Kết nối thiết bị di động</a>
+                    <a href="/feature/mobile-connecting.html">
+                        <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Kết nối thiết bị di động</a>
                 </li>
                 <li>
-                    <a href="/feature/platform-integrated.html">Nền tảng Tích hợp cho Nhà phát triển</a>
+                    <a href="/feature/platform-integrated.html">
+                        <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Nền tảng Tích hợp cho Nhà phát triển</a>
                 </li>
             </ul>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             <span class="bottom-list-title">kintone IVS</span>
             <br/>
             <br/>
@@ -54,24 +60,23 @@
                 </li>
             </ul>
         </div>
-        <div class="col-sm-1"></div>
         <div class="col-sm-5">
             <span class="bottom-list-title">Liên hệ</span>
             <br/>
             <br/>
             <ul class="bottom-list">
                 <li>
-                    <a href="{{ site.url}}/about/our-30-days-free-trial.html" class="btn btn-primary btn-sm" style="background-color: transparent; text-transform: uppercase">
+                    <a href="{{ site.url}}/service/30-days-free-trial.html" class="btn btn-primary btn-sm" style="background-color: transparent; text-transform: uppercase">
                         <i class="fa fa-free-code-camp" aria-hidden="true"></i> Dùng thử 30 ngày miễn phí</a>
                 </li>
                 <li>
-                    <a href="{{ site.url}}/about/schedule-a-live-demo.html" class="btn btn-primary btn-sm" style="background-color: transparent; text-transform: uppercase">
+                    <a href="{{ site.url}}/service/schedule-a-live-demo.html" class="btn btn-primary btn-sm" style="background-color: transparent; text-transform: uppercase">
                         <i class="fa fa-calendar" aria-hidden="true"></i> Đăng ký Demo trực tiếp</a>
                 </li>
                 <li></li>
-                <li></li>
                 <li>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; 3rd floor, VINA GIAY PLAZA, 180-182 Ly Chinh Thang, Dist. 3, HCMC
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; Tầng 3 - Tòa nhà VINA GIAY
+                    <br> 180-182 Lý Chính Thắng, quận 3, Thành phố Hồ Chí Minh, Việt Nam.
                 </li>
                 <li>
                     <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; (+84) 28-3931 5272 ext 801
@@ -85,13 +90,45 @@
     <hr style="border-color: #053442;">
     <!--//container-->
     <div class="container">
-        <div style="font-size: 0.8em; margin-bottom: 12px;">
-            <a href="">Chính sách bảo mật</a> |
-            <a href="">Điều khoản sử dụng</a> |
-            <a href="">Website IVS Co., Ltd.</a>
-        </div>
+        <nav style="margin-bottom: 12px;">
+            <ul class="bottom-util-list">
+                <li>
+                    <a href="">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">Chính sách bảo mật</a>
+                </li>
+                <li>
+                    <a href="">Điều khoản sử dụng</a>
+                </li>
+                <li>
+                    <a href="">Liên hệ chúng tôi</a>
+                </li>
+            </ul>
+        </nav>
         <small class="copyright">© 2017 IVS Co., Ltd - All rights reserved.</small>
     </div>
     <!--//container-->
+    <button onclick="topFunction()" id="bottom-scroll-top" title="Go to top"><i class="fa fa-level-up" aria-hidden="true"></i></button>
 </footer>
 <!--//footer-->
+<script type="text/javascript">
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("bottom-scroll-top").style.display = "block";
+        } else {
+            document.getElementById("bottom-scroll-top").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
