@@ -1,131 +1,115 @@
----
+--- 
 # You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: page
-title: Login
+# Edit theme's home layout instead if you wanna make some changes 
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults 
+layout: page 
+title: Đăng nhập
 permalink: login.html
 ---
-<main role="main" itemprop="mainContentOfPage" class="template-page content  av-content-full alpha units">
-    <div class="post-entry post-entry-type-page post-entry-3198">
-        <div class="entry-content-wrapper clearfix">
-            <div class="flex_column av_one_full  flex_column_div av-zero-column-padding first  avia-builder-el-1  avia-builder-el-no-sibling  "
-                style="border-radius:0px; ">
-                <section class="avia_codeblock_section avia_code_block_0" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
-                    <div class="avia_codeblock " itemprop="text">
-                        <div class="avia-button-wrap avia-button-center  avia-builder-el-15  el_after_av_hr  avia-builder-el-last ">
-                            <a id="signinbutton" class="avia-button avia-button-fullwidth  avia-icon_select-yes-left-icon avia-color-custom "
-                                target="_blank" style="color:#ffffff; background-color:#00cc99;  ">
-                                <div class="av-button-description av-button-description-above">
-                                    <p>Already have an account?</p>
-                                </div>
-                                <span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon=""
-                                    data-av_iconfont="entypo-fontello"></span>
-                                <span class="avia_iconbox_title">LOG IN HERE</span>
-                                <span class="avia_button_background avia-button avia-button-fullwidth avia-color-black"></span>
-                            </a>
-                        </div>
-
-                        <script>
-                            (function ($) {
-                                "use strict";
-                                //escape html
-                                function escapeHtml(htmlstr) {
-                                    return htmlstr
-                                        .replace(/&/g, '&')
-                                        .replace(/</g, '<')
-                                        .replace(/>/g, '>')
-                                        .replace(/"/g, '"')
-                                        .replace(/'/g, "'");
-                                }
-
-                                var thisbutton = document.getElementById("signinbutton");
-                                thisbutton.onclick = function () { //edit here
-                                    swal({
-                                        title: "Log in to kintone",
-                                        type: "input",
-                                        text: "Enter your subdomain name<br><input type='text' id='thetext'>.kintone.com",
-                                        html: true,
-                                        showCancelButton: true,
-                                        closeOnConfirm: false,
-                                        animation: "slide-from-top",
-                                        inputPlaceholder: "type here",
-                                        confirmButtonText: "Sign-in",
-                                        cancelButtonText: "Cancel"
-                                    },
-                                        function () {
-                                            var domain_name = escapeHtml($("#thetext").val());
-                                            if (domain_name === false) {
-                                                return false;
-                                            } else if (domain_name === "") {
-                                                swal.showInputError("Please input your domain name");
-                                                return false;
-                                            }
-                                            var URL = "https://" + domain_name + ".kintone.com";
-                                            window.open(URL, "_blank");
-                                        });
-                                };
-                            })(jQuery);
-                        </script> </div>
-                </section>
-                <div style="padding-bottom:0px;font-size:34px;" class="av-special-heading av-special-heading-h3  blockquote modern-quote  avia-builder-el-3  el_after_av_codeblock  el_before_av_textblock   av-thin-font av-inherit-size">
-                    <h3 class="av-special-heading-tag" itemprop="headline">
-                        <strong>How to log in via URL:</strong>
-                    </h3>
-                    <div class="special-heading-border">
-                        <div class="special-heading-inner-border"></div>
-                    </div>
-                </div>
-                <section class="av_textblock_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
-                    <div class="avia_textblock " style="font-size:22px; " itemprop="text">
-                        <p>To login, you’ll need to visit the unique web domain your account Administrator selected when your
-                            account was set up, like MyCompany.kintone.com.</p>
-                        <p>
-                            <img src="/images/howtologin/img_1.jpg" alt="">
-                        </p>
-                    </div>
-                </section>
-                <div style="padding-bottom:0px;font-size:34px;" class="av-special-heading av-special-heading-h3  blockquote modern-quote  avia-builder-el-5  el_after_av_textblock  el_before_av_textblock   av-thin-font av-inherit-size">
-                    <h3 class="av-special-heading-tag" itemprop="headline">
-                        <strong>I forgot my login details:</strong>
-                    </h3>
-                    <div class="special-heading-border">
-                        <div class="special-heading-inner-border"></div>
-                    </div>
-                </div>
-                <section class="av_textblock_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
-                    <div class="avia_textblock " style="font-size:22px; " itemprop="text">
-                        <p>
-                            <strong>Standard User</strong>
-                        </p>
-                        <p>Can’t recall your web domain?
-                            <br> Please contact your account Administrator for your login information.</p>
-                        <p>Forgot email or password?
-                            <br> 1. Go to your subdomain login page, click the Help link on the upper right.
-                            <br> You will get a conditional response:
-                            <br> A. If your account Administrator has allowed you to reset your password, you will be prompted
-                            to enter your account email address to begin your password reset process.
-                            <br> B. If your account Administrator does not allow you to reset your password, you will be redirected
-                            to a Help page that instructs you to contact your account Administrator.</p>
-                        <p>
-                            <strong>Administrator</strong>
-                            <br> Can’t recall your web domain?
-                            <br> 1. Go to the kintone Store login page
-                            <a href="https://store.kintone.com/">here</a>.
-                            <br> 2. Log in with your email address and password.
-                            <br> 3. You will see your web domain login page under Service Usage view.</p>
-                        <p>Forgot email or password?
-                            <br> A. If there are multiple Administrators, you can ask another Administrator in the system to
-                            reset your login name or reset your password.
-                            <br> B. But if you are the only Administrator, then you need to reset the Administrator password
-                            through the kintone Store. To do this:
-                            <br> 1. Go to the kintone Store login page
-                            <a href="https://store.kintone.com/">here</a>.
-                            <br> 2. Click on the “Forgot Email Address or Password” link
-                            <br> 3. Enter your email address and follow the instructions from the email you receive.</p>
-                    </div>
-                </section>
+<div class="row" style="text-align: center">
+    <p style="font-size: 36px">
+        <strong>kintone</strong> | Đăng nhập </p>
+    <p style="width:70%; margin: 0 auto; font-style: italic; font-size: 1em;">Để đăng nhập, bạn cần phải truy cập vào địa chỉ website mà Quản trị viên của bạn đã chọn khi thiết lập tài khoản cho
+        bạn, có định dạng là
+        <strong>[tên miền công ty].cybozu.com.</strong>
+    </p>
+</div>
+<br>
+<div class="container-fluid" style="border-top: 1px solid #f5f5f5; padding-top: 20px; ">
+    <div class="row">
+        <div class="col-sm-8">
+            <div id="section1">
+                <h4>Đăng nhập kintone</h4>
+                <hr>
+                <p>Để đăng nhập &amp; sử dụng kintone, bạn có thể dùng một trong các cách sau: </p>
+                <ul>
+                    <li>Trình duyệt trên Máy tính cá nhân</li>
+                    <li>Trình duyệt tên thiết bị di động</li>
+                    <li>Ứng dụng trên thiết bị di động (Android, iOs)</li>
+                </ul>
             </div>
+            <br>
+            <br>
+            <div id="section2">
+                <h4>Quên [tài khoản] hoặc [mật khẩu]</h4>
+                <hr>
+                <p>Để đăng nhập &amp; sử dụng kintone, bạn có thể dùng một trong các cách sau: </p>
+                <ul>
+                    <li>Trình duyệt trên Máy tính cá nhân</li>
+                    <li>Trình duyệt tên thiết bị di động</li>
+                    <li>Ứng dụng trên thiết bị di động (Android, iOs)</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <div id="section3">
+                <h4>Truy cập an toàn </h4>
+                <hr>
+                <p>Để đăng nhập &amp; sử dụng kintone, bạn có thể dùng một trong các cách sau: </p>
+                <ul>
+                    <li>Trình duyệt trên Máy tính cá nhân</li>
+                    <li>Trình duyệt tên thiết bị di động</li>
+                    <li>Ứng dụng trên thiết bị di động (Android, iOs)</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <div id="section4">
+                <h4>Tham gia kintone's Guest space</h4>
+                <hr>
+                <p>Để đăng nhập &amp; sử dụng kintone, bạn có thể dùng một trong các cách sau: </p>
+                <ul>
+                    <li>Trình duyệt trên Máy tính cá nhân</li>
+                    <li>Trình duyệt tên thiết bị di động</li>
+                    <li>Ứng dụng trên thiết bị di động (Android, iOs)</li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <div class="col-sm-4" id="myScrollspy">
+            <br>
+            <ul class="function-box">
+                <li><div>kintone của bạn?</div></li>
+                <li>
+                    <form action="" style="display: inline-flex">
+                        <input type="text" id="subdomain" />
+                        <input type="text" id="subdomaintwo" value=".cybozu.com" disabled/>
+                        <button type="submit">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+            <br><br>
+            <ul class="nav promoted-box">
+                <li><div><i class="fa fa-star" aria-hidden="true"></i> kintone cho người mới bắt đầu</div></li>
+                <li>
+                    <a href="#section1">1. Làm quen các tính năng</a>
+                </li>
+                <li>
+                    <a href="#section4">2. Quản lý mật khẩu</a>
+                </li>
+                <li>
+                    <a href="#section2">3. Thiết lập thông tin cá nhân</a>
+                </li>
+                <li>
+                    <a href="#section4">4. Thay đổi dữ liệu</a>
+                </li>
+                <li>
+                    <a href="#section4">5. Đăng xuất</a>
+                </li>
+            </ul>
+
+            <br>
+            <ul class="nav promoted-box">
+                <li><div><i class="fa fa-address-book-o" aria-hidden="true"></i> Hỗ trợ</div></li>
+                <li>
+                    <a href="#section1">**Hướng dẫn sử dụng kintone</a>
+                </li>
+                <li>
+                    <a href="#section4">**Sổ tay người quản trị</a>
+                </li>
+            </ul>
         </div>
     </div>
-</main>
+</div>
