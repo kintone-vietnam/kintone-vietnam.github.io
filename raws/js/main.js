@@ -28,6 +28,6 @@ jQuery(document).ready(function($) {
 			$('.navbar-collapse').removeClass('in').addClass('collapse');
 		}
 		
-	});
+    });
 
 });
