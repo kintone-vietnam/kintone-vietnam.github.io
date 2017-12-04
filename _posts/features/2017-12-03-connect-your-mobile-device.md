@@ -2,7 +2,8 @@
 layout: article
 title:  "Welcome to Jekyll!"
 date:   2017-12-03 12:35:09 +0700
-categories: kintone customer
+categories: kintone features
+permalink: kintone/features/connect-your-mobile-device.html
 ---
 # Dillinger
  

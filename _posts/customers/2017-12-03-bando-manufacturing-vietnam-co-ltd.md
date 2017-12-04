@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "Welcome to Jekyll!"
-date:   2017-12-04 2:35:09 +0700
-categories: kintone solution
+date:   2017-12-03 12:35:09 +0700
+categories: kintone customers
+permalink: kintone/customers/bando-manufacturing-vietnam-co-ltd.html
 ---
 # Dillinger
  
