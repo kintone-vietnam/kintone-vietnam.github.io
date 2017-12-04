@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <!-- Page's Title -->   
+    {% include _tags/title.html %}
+
+    <!-- Meta -->   
+    {% include _tags/meta.html %}
+
+    <!-- CSS -->   
+    {% include _tags/link.html %}
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+    {% include facebook.html %}
+    
+    <!-- Header -->   
+    {% include header.html %}
+    
+    <!-- Main Container -->   
+    <div class="container" style="min-height: 500px; padding-top: 80px;" data-provide="markdown-editable">
+        <article class="col-sm-8">
+                {{ content }}
+        </article>
+        <div class="col-sm-4"></div>
+    </div>
+
+    <!-- Footer -->   
+    {% include footer.html %}
+
+    <!-- Javascript -->   
+    {% include _tags/script.html %}
+</body>
+</html>
