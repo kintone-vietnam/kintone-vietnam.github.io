@@ -9,8 +9,10 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.4/prism.min.js"></script>
 <script type="text/javascript" src="/raws/js/main.js"></script>
-<script>
-    (function ($) {
+<script type="text/javascript">
+    $("table").addClass("table table-border,");
+
+    $(document).ready(function () {
         "use strict";
         //escape html
         function escapeHtml(htmlstr) {
@@ -22,34 +24,17 @@
                 .replace(/'/g, "'");
         }
 
-        var thisbutton = document.getElementById("signinbutton");
-        thisbutton.onclick = function () { //edit here
-            swal({
-                title: "Log in to kintone",
-                type: "input",
-                text: "Enter your subdomain name<br><input type='text' id='thetext'>.kintone.com",
-                html: true,
-                showCancelButton: true,
-                closeOnConfirm: false,
-                animation: "slide-from-top",
-                inputPlaceholder: "type here",
-                confirmButtonText: "Sign-in",
-                cancelButtonText: "Cancel"
-            },
-                function () {
-                    var domain_name = escapeHtml($("#thetext").val());
-                    if (domain_name === false) {
-                        return false;
-                    } else if (domain_name === "") {
-                        swal.showInputError("Please input your domain name");
-                        return false;
-                    }
-                    var URL = "https://" + domain_name + ".kintone.com";
-                    window.open(URL, "_blank");
-                });
-        };
-    })(jQuery);
-</script>
-<script>
-    $("table").addClass("table table-border,");
+        $('#signinbutton').on('click', function () { //edit here
+
+            var domain_name = escapeHtml($("#subdomain").val());
+            if (domain_name === false) {
+                return false;
+            } else if (domain_name === "") {
+                swal.showInputError("Please input your domain name");
+                return false;
+            }
+            var URL = "https://" + domain_name + ".cybozu.com";
+            window.open(URL, "_blank");
+        });
+    })
 </script>
